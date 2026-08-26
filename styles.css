@@ -4,12 +4,12 @@
 
 :root {
   --primary: #2563eb;
-  --primary-dark: #1d4ed8;
+  --primary-dark: rgb(34, 113, 203);
   --secondary: #0f172a;
   --accent: #38bdf8;
 
   --background: #f8fafc;
-  --surface: #ffffff;
+  --surface: rgb(255, 255, 255);
   --surface-alt: #eef2ff;
 
   --text: #334155;
@@ -221,7 +221,6 @@ strong {
 }
 
 
-/* Pseudo-elemento ::after */
 .section-title::after {
   content: "";
 
@@ -241,7 +240,6 @@ strong {
 }
 
 
-/* Selector de hermano adyacente */
 h2 + p {
   margin-top: 0.5rem;
 
@@ -334,7 +332,7 @@ h2 + p {
 }
 
 
-/* Checkbox oculto pero funcional */
+
 .menu-toggle {
   position: absolute;
 
@@ -413,13 +411,11 @@ h2 + p {
 }
 
 
-/* Selector de hijo directo */
 nav > ul > li {
   border-bottom: 1px solid var(--border);
 }
 
 
-/* Selector descendiente */
 nav a {
   transition:
     color 0.2s ease,
@@ -447,19 +443,16 @@ nav a {
 }
 
 
-/* Pseudo-clase :first-child */
 .nav-links li:first-child a {
   padding-top: 1.2rem;
 }
 
 
-/* Pseudo-clase :last-child */
 .nav-links li:last-child {
   border-bottom: 0;
 }
 
 
-/* Mostrar menú móvil */
 .menu-toggle:checked ~ .nav-links {
   max-height: 25rem;
 
@@ -467,7 +460,6 @@ nav a {
 }
 
 
-/* Transformaciones del botón hamburguesa */
 .menu-toggle:checked + .menu-button span:first-child {
   transform:
     translateY(7px)
@@ -601,7 +593,6 @@ nav a {
 }
 
 
-/* Elemento decorativo */
 .hero::before {
   content: "";
 
@@ -629,7 +620,6 @@ nav a {
 }
 
 
-/* Segundo elemento decorativo */
 .hero::after {
   content: "";
 
@@ -720,7 +710,6 @@ nav a {
 }
 
 
-/* Pseudo-elemento ::first-line */
 .hero-description::first-line {
   font-weight: 600;
 }
@@ -762,7 +751,6 @@ nav a {
 }
 
 
-/* Decoración detrás de la imagen */
 .profile-image-wrapper::before {
   content: "";
 
@@ -842,7 +830,6 @@ nav a {
 }
 
 
-/* Pseudo-elemento ::first-line */
 .about-copy > p:first-of-type::first-line {
   color: var(--text-dark);
 
@@ -863,7 +850,6 @@ nav a {
 }
 
 
-/* Pseudo-elemento */
 .text-link::after {
   content: " →";
 
@@ -1040,7 +1026,6 @@ nav a {
 }
 
 
-/* nth-child */
 .skill:nth-child(2n) .skill-icon {
   transform: rotate(-3deg);
 }
@@ -1088,7 +1073,6 @@ nav a {
 }
 
 
-/* Hover + elevación + z-index */
 .card:hover {
   z-index: 10;
 
@@ -1184,7 +1168,6 @@ nav a {
 }
 
 
-/* Selector descendiente requerido */
 .card p {
   margin-bottom: 1.25rem;
 
@@ -1258,7 +1241,6 @@ nav a {
 }
 
 
-/* Selector de atributo */
 a[href^="https"]::after {
   content: " ↗";
 
@@ -1373,13 +1355,11 @@ a[href^="https"]::after {
 }
 
 
-/* Selector de atributo requerido */
 input[type="email"] {
   background-color: #f8fbff;
 }
 
 
-/* Otro selector de atributo */
 input[required],
 textarea[required] {
   border-left:
@@ -1578,19 +1558,6 @@ textarea[required] {
   word-spacing: 0.08rem;
 }
 
-
-/* ==========================================================
-   MOBILE
-   320px - 767px
-   Los estilos anteriores son MOBILE FIRST.
-   ========================================================== */
-
-
-/* ==========================================================
-   TABLET
-   min-width: 768px
-   ========================================================== */
-
 @media (min-width: 768px) {
 
   section {
@@ -1602,8 +1569,6 @@ textarea[required] {
     font-size: 2.4rem;
   }
 
-
-  /* NAVEGACIÓN DESKTOP/TABLET */
 
   .menu-button {
     display: none;
@@ -1650,7 +1615,6 @@ textarea[required] {
   }
 
 
-  /* HERO */
 
   .hero-buttons {
     flex-direction: row;
@@ -1659,7 +1623,6 @@ textarea[required] {
   }
 
 
-  /* ABOUT */
 
   .about-container {
     flex-direction: row;
@@ -1668,7 +1631,6 @@ textarea[required] {
   }
 
 
-  /* HABILIDADES */
 
   .skill {
     flex:
@@ -1678,7 +1640,6 @@ textarea[required] {
   }
 
 
-  /* PROYECTOS - 2 COLUMNAS FLEXBOX */
 
   .projects-container {
     flex-direction: row;
@@ -1695,7 +1656,6 @@ textarea[required] {
   }
 
 
-  /* CONTACTO */
 
   .contact-container {
     flex-direction: row;
@@ -1704,7 +1664,7 @@ textarea[required] {
   }
 
 
-  /* FOOTER */
+
 
   .footer-container {
     flex-direction: row;
@@ -1725,10 +1685,6 @@ textarea[required] {
 }
 
 
-/* ==========================================================
-   DESKTOP
-   min-width: 1024px
-   ========================================================== */
 
 @media (min-width: 1024px) {
 
@@ -1747,7 +1703,7 @@ textarea[required] {
   }
 
 
-  /* HERO */
+  
 
   .hero-container {
     flex-direction: row;
@@ -1790,7 +1746,7 @@ textarea[required] {
   }
 
 
-  /* HABILIDADES */
+
 
   .skill {
     flex:
@@ -1802,7 +1758,6 @@ textarea[required] {
   }
 
 
-  /* PROYECTOS - 3 COLUMNAS CON FLEXBOX */
 
   .project-card {
     flex:
@@ -1817,7 +1772,6 @@ textarea[required] {
   }
 
 
-  /* FORMULARIO */
 
   .contact-form {
     padding: 2.5rem;
@@ -1831,10 +1785,6 @@ textarea[required] {
 }
 
 
-/* ==========================================================
-   DESKTOP GRANDE
-   min-width: 1440px
-   ========================================================== */
 
 @media (min-width: 1440px) {
 
