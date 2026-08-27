@@ -140,6 +140,17 @@ section {
   padding: 5rem 0;
 }
 
+#hero {
+  scroll-margin-top: var(--header-height);
+}
+
+#about {
+  scroll-margin-top: var(--header-height);
+}
+
+#contact {
+  scroll-margin-top: var(--header-height);
+}
 
 section:nth-of-type(even) {
   background-color: #ffffff;
