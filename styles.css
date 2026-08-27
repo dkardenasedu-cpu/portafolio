@@ -97,26 +97,31 @@ textarea {
 
 
 /* ==========================================================
-   JUSTIFICACIÓN DE UNIDADES
+   UNIDADES UTILIZADAS
 
    px:
-   Utilizado principalmente en bordes y detalles precisos.
+   Fue utilizado para bordes, detalles pequeños,
+   desplazamientos y tamaños de pantalla.
 
    rem:
-   Utilizado en tipografía, padding y margin porque escala
-   según el tamaño de fuente raíz.
+   Fue utilizado para tamaños de letra y espacios,
+   ya que se adapta mejor al tamaño base del texto.
 
    %:
-   Utilizado en anchos flexibles.
+   Fue utilizado para que algunos elementos ocupen una
+   parte del espacio disponible.
 
    vh:
-   Permite relacionar una sección con la altura de pantalla.
+   Fue utilizado para relacionar el tamaño de algunos
+   elementos con la altura de la pantalla.
 
    vw:
-   Utilizado en tipografía adaptable.
+   Fue utilizado para relacionar algunos tamaños con
+   el ancho de la pantalla.
 
    calc():
-   Permite calcular dimensiones dependiendo de otros elementos.
+   Fue utilizado para hacer cálculos con tamaños,
+   por ejemplo restar la altura del header a la pantalla.
    ========================================================== */
 
 
